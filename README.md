@@ -11,14 +11,14 @@
 
 ## [Git](git/)
 
-* [[GitHub]](github/)
+* [GitHub](github/)
 
 
 
 ## [Markdown](markdown/)
 
-* [mathematics](markdown/mathematics/)
-* [mermaid](markdown/mermaid/)
+* [Mathematics](markdown/mathematics/)
+* [Mermaid](markdown/mermaid/)
 
 
 

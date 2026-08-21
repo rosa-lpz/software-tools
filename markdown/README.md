@@ -1,4 +1,4 @@
 # Markdown
 
-* [mathematics](mathematics/)
-* [mermaid](mermaid/)
+* [Mathematics](mathematics/)
+* [Mermaid](mermaid/)
