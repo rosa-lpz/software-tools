@@ -1,10 +1,11 @@
 # Software Tools
 
-## [Docker](docker)
+## [Docker](docker/)
 
-* [Docker commands]([docker/docker-commands.md)
-* [Docker compose]([docker/docker-compose.md)
+* [Docker commands](docker/docker-commands.md)
+* [Docker compose](docker/docker-compose.md)
 * [Docker images containers](docker/docker_images-containers.md)
+
 
 
 
@@ -25,12 +26,11 @@
 
 ### Data visualization tools
 
-* [Tableau](https://github.com/rosa-lpz/data-analysis-handbook/tree/main/data-visualization/tableau)
+* [Tableau](https://github.com/rosa-lpz/data-analysis-handbook/tree/main/tableau)
 
-* [Power BI](https://github.com/rosa-lpz/data-analysis-handbook/tree/main/data-visualization/power-bi)
+* [Power BI](https://github.com/rosa-lpz/data-analysis-handbook/tree/main/power-bi)
 
-  
-
+ 
 ### Google
 * Google Spreadsheets
 * Locker / Data Studio
