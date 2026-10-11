@@ -1,5 +1,6 @@
 # Git
-Repository for Git
+* Commits
+* 
 
 # Status
 
