@@ -1,4 +1,4 @@
-## Box-Drawing Input 
+# Box-Drawing Input 
 
 As an alternative to indentation, you can use box-drawing characters to define the tree structure. The parser auto-detects the format — no extra keyword or config is needed. This is how most file tree diagrams are drawn already, so you can turn those into Mermaid diagrams with very little effort.
 
@@ -29,30 +29,41 @@ treeView-beta
 
 
 
-All annotations work the same way — just append them after the label:
+
+
+
+
+Depth is inferred from the column position of the branch character, so deeper nesting works naturally:
 
 ##### Code:
 
 ```
 treeView-beta
-├── src/
-│   ├── App.tsx :::highlight icon(logos:react) ## main component
-│   └── index.ts ## entry point
-├── .env ## environment variables
-├── Dockerfile
-└── package.json
+├── packages/
+│   ├── mermaid/
+│   │   ├── src/
+│   │   │   ├── parser.ts
+│   │   │   └── renderer.ts
+│   │   └── package.json
+│   └── parser/
+│       └── src/
+└── README.md
 ```
 
 
 
 ```mermaid
 treeView-beta
-├── src/
-│   ├── App.tsx :::highlight icon(logos:react) ## main component
-│   └── index.ts ## entry point
-├── .env ## environment variables
-├── Dockerfile
-└── package.json
+├── packages/
+│   ├── mermaid/
+│   │   ├── src/
+│   │   │   ├── parser.ts
+│   │   │   └── renderer.ts
+│   │   └── package.json
+│   └── parser/
+│       └── src/
+└── README.md
 
 ```
 
+**Note:** If a parse error occurs, line numbers in the error message refer to your original input. Tab characters are automatically expanded to spaces.
