@@ -1,6 +1,6 @@
 # Git
 * Commits
-* 
+* Branches
 
 # Status
 
@@ -14,65 +14,7 @@ git status
 git init                        # Initialize a new repo in the current folder
 git clone <repo-url>            # Clone an existing repo
 ```
-# Branches
 
-## Common commands
-```bash
-git branch                      # List branches
-git branch <branch-name>        # Create a new branch
-git checkout <branch-name>      # Switch to a branch
-git checkout -b <branch-name>   # Create and switch to a new branch
-git branch -d <branch-name>     # Delete a local branch
-
-
-
-```
-
-
-## Clone in an specific branch
-
-```bash
-# Clone the specific branch using git clone with the -b flag
-git clone -b branch_name https://github.com/username/repository
-```
-
-## Push to a branch created in local
-To push the current branch and set the remote as upstream, use
-```bash
-git push --set-upstream origin <branch_name>
-```
-
-## Track remote branch already created
-```bash
-# to make sure your local branch has a [remote tracking # branch]
-git push -u origin branchname
-git remote add upstream github_repository_url
-git branch --set-upstream-to branch_name
-git branch --set-upstream-to main
-
-```
-**Add upstream**
-```bash
-git remote add upstream <git_repository_url>
-```
-**Remove upstream**
-```bash
-git remote remove upstream
-git rm remove upstream
-```
-
-**Verify Upstream remote**
-```bash
-git remote -v
-```
-**Pull changes from main or another branch**
-```bash
-git pull upstream main
-git pull upstream <branch_nem>
-```
-
-### Reference
-https://stackoverflow.com/questions/520650/make-an-existing-git-branch-track-a-remote-branch
 
 # Git Log
 
@@ -101,45 +43,6 @@ git restore --staged <file>
 ```
 
 
-
-# Commits
-
-## Create commit
-```bash
-# add file/folder
-git commit -m "insert_comment"
-```
-## Remove a git commit that has not been pushed
-I did a `git commit` but I have not pushed it to the repository yet. So when I do `git status`, I get '# Your branch is ahead of 'master' by 1 commit.
-
-So if I want to roll back my top commit, can I just do:
-
-```bash
- git reset --hard 6f1bfa856866809287a95d28a5f6f1a36d8a0201
- git reset --hard HEAD~1
-```
-
-
-### Reference
-* https://stackoverflow.com/questions/1611215/remove-a-git-commit-which-has-not-been-pushed
-* 
-## Viewing the Commit History
-
-```bash
-git log
-```
-
-
-```bash
-git log --pretty="%h - %s" --author='Junio C Hamano' --since="2008-10-01" \
-   --before="2008-11-01" --no-merges -- t/
-5610e3b - Fix testcase failure when extended attributes are in use
-acd3b9e - Enhance hold_lock_file_for_{update,append}() API
-f563754 - demonstrate breakage of detached checkout with symbolic link HEAD
-d1a43f2 - reset --hard/read-tree --reset -u: remove unmerged new paths
-51a94af - Fix "checkout --track -b newbranch" on detached HEAD
-b0ad11e - pull: allow "git pull origin $something:$current_branch" into an unborn branch
-```
 
 # Push
 Push commits to branch
@@ -236,3 +139,4 @@ git config --global user.name "Your name"
 * https://www.ivanontiveros.com/git-cheat-sheet/
 * https://stackoverflow.com/questions/1611215/remove-a-git-commit-which-has-not-been-pushed
 * https://www.delftstack.com/howto/git/git-untrack-folder/
+* https://stackoverflow.com/questions/520650/make-an-existing-git-branch-track-a-remote-branch
