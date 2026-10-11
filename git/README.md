@@ -1,6 +1,7 @@
 # Git
-* Commits
-* Branches
+* [Commits](commits.md)
+* [Branches](branches.md)
+* [Authentication](authentication.md)
 
 # Status
 
