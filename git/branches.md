@@ -65,6 +65,5 @@ git pull upstream <branch_nem>
 
 # Reference
 
-https://stackoverflow.com/questions/520650/make-an-existing-git-branch-track-a-remote-branch
-
-# 
+* https://stackoverflow.com/questions/520650/make-an-existing-git-branch-track-a-remote-branch
+* https://stackoverflow.com/questions/69374455/fetch-the-latest-changes-from-main-branch
