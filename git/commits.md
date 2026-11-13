@@ -24,7 +24,11 @@ So if I want to roll back my top commit, can I just do:
 * https://stackoverflow.com/questions/1611215/remove-a-git-commit-which-has-not-been-pushed
 * 
 
-## Viewing the Commit History
+## Commit History
+
+### Viewing the commit history
+
+#### Command line
 
 ```bash
 git log
@@ -42,7 +46,52 @@ d1a43f2 - reset --hard/read-tree --reset -u: remove unmerged new paths
 b0ad11e - pull: allow "git pull origin $something:$current_branch" into an unborn branch
 ```
 
+#### GitHub
 
+In your GitHub repository:
+
+1. Open the repository.
+2. Click on commits (above the file list).
+3. Find the specific commit.
+4. Copy its commit SHA (hash).
+
+### Fetch an previous commit
+
+**Fetch commit locally**
+
+```
+git fetch origin
+```
+
+**Checkout the old commit**
+
+```
+git checkout <commit-hash>
+```
+
+This puts your repository in a detached HEAD state. You're viewing the code exactly as it was at that commit.
+
+**To restore that old version as a branch (optional)**
+
+```
+git checkout -b old-version <commit-hash>
+```
+
+**To make the current branch match that old commit (optional)**
+
+Warning: This changes the branch history.
+
+```
+git reset --hard <commit-hash>
+```
+
+GitHub to match (optinal):
+
+```
+git push --force-with-lease origin main
+```
+
+- 
 
 # References
 

@@ -21,6 +21,7 @@ git clone <repo-url>            # Clone an existing repo
 
 ```bash
 git log
+git log --no-merges # See commits that haven't been merged
 ```
 
 # Add / remove file or folder
