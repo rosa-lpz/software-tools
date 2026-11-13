@@ -59,21 +59,31 @@ In your GitHub repository:
 
 **Fetch commit locally**
 
-```
+```bash
 git fetch origin
 ```
 
 **Checkout the old commit**
 
-```
+```bash
 git checkout <commit-hash>
+git switch - # to undo this operation
 ```
 
 This puts your repository in a detached HEAD state. You're viewing the code exactly as it was at that commit.
 
+If you want to create a new branch to retain commits you create, you may 
+do so (now or later) by using -c with the switch command. Example: 
+
+* git switch -c <new-branch-name> 
+
+Or undo this operation with: 
+
+* git switch -
+
 **To restore that old version as a branch (optional)**
 
-```
+```bash
 git checkout -b old-version <commit-hash>
 ```
 
@@ -81,13 +91,13 @@ git checkout -b old-version <commit-hash>
 
 Warning: This changes the branch history.
 
-```
+```bash
 git reset --hard <commit-hash>
 ```
 
 GitHub to match (optinal):
 
-```
+```bash
 git push --force-with-lease origin main
 ```
 
