@@ -75,6 +75,7 @@ This puts your repository in a detached HEAD state. You're viewing the code exac
 If you want to create a new branch to retain commits you create, you may 
 do so (now or later) by using -c with the switch command. Example: 
 
+* git switch main
 * git switch -c <new-branch-name> 
 
 Or undo this operation with: 
@@ -85,6 +86,7 @@ Or undo this operation with:
 
 ```bash
 git checkout -b old-version <commit-hash>
+git switch -c old-version <commit-hash>
 ```
 
 **To make the current branch match that old commit (optional)**
@@ -101,7 +103,7 @@ GitHub to match (optinal):
 git push --force-with-lease origin main
 ```
 
-- 
+
 
 # References
 
