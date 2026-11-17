@@ -86,7 +86,8 @@ Or undo this operation with:
 
 ```bash
 git checkout -b old-version <commit-hash>
-git switch -c old-version <commit-hash>
+git switch -c old-version <commit-hash>git/commits.md - Commit history - undo checkout
+
 ```
 
 **To make the current branch match that old commit (optional)**
